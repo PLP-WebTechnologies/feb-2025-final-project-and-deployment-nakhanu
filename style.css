@@ -19,6 +19,18 @@ button.normal{
     padding: 15px 30px;
     color: black;
     background-color: #f2f2f2;
+    border: 1px solid white;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+}
+
+button.white{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
     border-radius: 4px;
     cursor: pointer;
     outline: none;
@@ -274,18 +286,19 @@ body{
     right: 10px;
 }
 
-#banner{
-    display: flex;
+#banner {
+   display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%; /* Ensure full viewport width */
+    height: 40vh;
     background-image: url('Images/banner.jpg');
-    width: 100%;
-    height: 45vh;
     background-size: cover;
     background-position: center;
 }
+
 
 #banner h4{
     font-size:10px;
@@ -306,4 +319,95 @@ body{
 
 #banner button:hover{
     background-color: #088878;
+}
+
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 580px; 
+    height: 50vh;
+    background-image: url('Images/sm-banner.png');
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+#sm-banner .banner-box2{
+    background-image: url('Images/collection.png');
+}
+
+#sm-banner h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+#sm-banner h2{
+    color: black;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+#sm-banner span{
+    color: #5c5454;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button{
+    background: #088878;
+    border: 1px solid #088878;
+}
+
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 30%; 
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+#banner3 .banner-box:nth-child(1) {
+    background-image: url('https://images.pexels.com/photos/29875437/pexels-photo-29875437/free-photo-of-two-women-enjoying-winter-outdoors-with-luggage-cart.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+#banner3 .banner-box2 {
+    background-image: url('https://images.pexels.com/photos/3596282/pexels-photo-3596282.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+#banner3 .banner-box3 {
+    background-image: url('https://images.pexels.com/photos/16876966/pexels-photo-16876966/free-photo-of-young-woman-in-a-dress-holding-a-bouquet-and-standing-by-the-water.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+#banner3 h2{
+    color: #ce544e;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#banner3 h3{
+    color: white;
+    font-weight: 800;
+    font-size: 15px;
 }
