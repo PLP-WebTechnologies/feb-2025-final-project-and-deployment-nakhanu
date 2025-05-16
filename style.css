@@ -560,42 +560,53 @@ footer .payment-row img {
     height: auto;
 }
 
-@media (max-width: 799px) {
-    #navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        position: fixed;
-        top: 0;
-        right: -300px;
-        height: 100vh;
-        width: 300px;
-        background-color: #E3E6F3;
-        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
-        padding: 80px 0 0 10px;
-        transition: right 0.3s ease;
-    }
+@media (max-width: 666px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #E3E6F3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: right 0.3s ease;
+    z-index: 100;
+  }
 
-    #navbar.active {
-       right: 0;
-    }
+  #navbar.active {
+    right: 0;
+  }
 
-    #navbar li{
-        margin-bottom: 25px;
-    }
+  #navbar li {
+    margin-bottom: 25px;
+  }
 
-    #mobile{
+  #mobile {
     display: flex;
     align-items: center;
-    }
+    cursor: pointer;
+  }
 
-    #mobile i{
+  #mobile i {
     color: #1a1a1a;
     font-size: 24px;
     padding-left: 20px;
-    }
+  }
 
-    #close{
+  #close {
+    color: #222;
+    font-size: 24px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    cursor: pointer;
+  }
+}
+    #close {
         color: #222;
         font-size: 24px;
         padding-left: 20px;
@@ -604,17 +615,11 @@ footer .payment-row img {
         left: 30px;
     }
 
-   const bar = document.getElementById('bar');
-   const close = document.getElementById('close');
-   const nav = document.getElementById('navbar');
+    #Ig-bag {
+        display: none;
+    }
 
-    if.(bar) {
-     bar.addEventListener('click', () => {
-        nav.classList.add ('active');
-    });}
+    #hero {
+        padding: 0 20px;
+    }   
 
-    if.(close) {
-    close.addEventListener('click', () => {
-        nav.classList.remove ('active');
-    });
-}
