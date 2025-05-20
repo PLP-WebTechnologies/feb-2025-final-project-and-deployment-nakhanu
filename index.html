@@ -11,18 +11,18 @@
     <section id="header">
         <a href="#"><img src="Images/logo.jpg" class="logo" alt="" style="width: 60px;"></a>
         <div>
-            <nav id="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="cart.html"><i class="fa fa-shopping-basket fa-sm" aria-hidden="true"></i></a></li>
-                      <i id="close" class="fas fa-times"></i>
-                </ul>
-            </nav>
-        </div>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html"><i class="fa fa-shopping-basket fa-sm" aria-hidden="true"></i></a></li>
+        </ul>
+        <i id="close" class="fas fa-times"></i> 
+    </nav>
+</div>
         <div id="mobile">
             <i id="bar" class="fas fa-bars"></i>
          </div>
@@ -207,9 +207,6 @@
         <h2>Up to <span>70% off</span> - All dresses and accessories </h2>
         <button class = "normal">Explore More</button>
     </section>
-
-    
-
     <section id="product1" class="section-p1">
         <h2>New Arrivals</h2>
             <p>Summer Collection New Modern Design</p>
@@ -384,9 +381,10 @@
             <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
         </div>
         <div class="form">
-            <input type="text" placeholder="Your email address">
-            <button class = "normal">Sign Up</button>
-        </div>
+    <label for="email" style="display: none;">Email Address</label> 
+    <input type="email" id="email" name="email" placeholder="Your email address" required>
+    <button class="normal" type="submit">Sign Up</button>
+</div>
     </section>  
     <footer class="section-p1">
         <div class="col">
