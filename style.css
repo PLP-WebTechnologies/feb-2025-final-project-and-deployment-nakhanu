@@ -75,7 +75,7 @@ body{
 
 #navbar li a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 16px;
     transition: color 0.3s ease;
 }
@@ -564,7 +564,7 @@ footer .payment-row img {
     height: auto;
 }
 
-@media (max-width: 666px) {
+@media (max-width: 799px) {
     .section-p1{
         padding: 40px 40px;
     }
@@ -572,45 +572,42 @@ footer .payment-row img {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
     position: fixed;
     top: 0;
     right: -300px;
     height: 100vh;
     width: 300px;
-    background-color: #E3E6F3;
+    background-color: #e3e6fe;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 80px 0 0 10px;
     transition: right 0.3s ease;
-    z-index: 100;
-  }
-
-  #navbar.active {
+    z-index: 1000;
+}
+#navbar.active {
     right: 0;
+}
+#navbar ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
   }
 
-  #navbar li {
-    margin-bottom: 25px;
-  }
-
-  #mobile {
+#mobile{
     display: flex;
     align-items: center;
-    cursor: pointer;
-  }
-
-  #mobile i {
+}
+#mobile i{
     color: #1a1a1a;
-    font-size: 24px;
+    font-size: 14px;
     padding-left: 20px;
-  }
-
+}
   #close {
-  display: block;
-  font-size: 24px;
-  cursor: pointer;
-  margin-left: auto;
-  margin-right: 20px;
-  color: #1a1a1a;
+  left: 30px;
+  top: 30px;
+  color: #222;
+  position: absolute;
 }
 
     #Ig-bag {
